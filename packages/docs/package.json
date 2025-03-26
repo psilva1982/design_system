@@ -4,14 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "vite": "vite",
+    "vite-build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build"
   },
   "dependencies": {
+    "phosphor-react": "^1.4.1",
     "polished": "^4.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
