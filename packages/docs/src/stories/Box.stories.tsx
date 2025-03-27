@@ -10,7 +10,14 @@ export default {
                 <Text>Testando o elemento Box</Text>
             </>
         ),
-    },
+    },  
+    argTypes: {
+        children: {
+          control: {
+            type: null,
+          },
+        },
+      },
     tags: ['autodocs'],
 } as Meta<BoxProps>
 

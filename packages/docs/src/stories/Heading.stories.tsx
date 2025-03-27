@@ -6,7 +6,16 @@ export default {
     component: Heading,
     args: {
         children: 'Custom title',
+        size: 'md',
     },
+    argTypes: {
+        size: {
+          options: ['sm', 'md', 'lg', '2xl', '4xl', '5xl', '6xl'],
+          control: {
+            type: 'inline-radio',
+          },
+        },
+    },    
     tags: ['autodocs'],
 } as Meta<HeadingProps>
 
@@ -15,7 +24,7 @@ export const Primary: StoryObj<HeadingProps> = {}
 export const CustomTag: StoryObj<HeadingProps> = {
     args: {
         children: 'H1 Heading',
-        as: 'h1',
+        as: "span",
     },
     parameters: {
         docs: {

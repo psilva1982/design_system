@@ -8,6 +8,13 @@ import type { Meta, StoryObj } from '@storybook/react'
      src: 'https://i.pravatar.cc/300',
      alt: 'Random avatar',
    },
+   argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },   
    tags: ['autodocs'],
  } as Meta<AvatarProps>
  
