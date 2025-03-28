@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
  import { Box, Text, TextInput, TextInputProps } from '@psilva1982-ds/react'
+import { Placeholder } from 'phosphor-react'
  
  export default {
    title: 'Form/Text Input',
@@ -36,5 +37,6 @@ import type { Meta, StoryObj } from '@storybook/react'
  export const WithPrefix: StoryObj<TextInputProps> = {
    args: {
      prefix: 'cal.com/',
+     placeholder: 'your-username'
    },
  }
